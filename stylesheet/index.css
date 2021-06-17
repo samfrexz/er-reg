@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #fffbfb;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  background: #ffff00;
+  background: #ffffff;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+  top: 2.5rem;
+  position: relative;
+}
+
+.nav-container {
+  display: flex;
+  width: 86%;
+  margin: 0 auto;
+  height: 9vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container ul {
+  list-style: none;
+  display: flex;
+  width: 24%;
+  justify-content: space-between;
+}
+
+.nav-container ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.bars {
+  display: none;
+}
+/* end of the nav section */
+
+.create-account {
+  width: 100%;
+  height: 14vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show {
+  display: none;
+}
+
+.circle img {
+  right: -38rem;
+  position: relative;
+  top: 25vh;
+}
+
+.login {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+}
+
+.login-box,
+.social-login {
+  margin-top: 1rem;
+  flex-basis: 50%;
+}
+
+input[type="text"],
+[type="password"],
+[type="email"],
+[type="number"],
+[type="submit"] {
+  width: 90%;
+  margin: 0.8rem auto;
+  padding: 1rem 0.7rem;
+  border-radius: 5px;
+  border: 1px solid #030f25;
+  outline: none;
+}
+
+.or {
+  margin-top: 4rem;
+}
+
+.or img {
+  padding-left: 0.4rem;
+}
+
+[type="submit"] {
+  width: 90%;
+  margin: 0.5rem 0;
+  padding: 1rem 0.4rem;
+  border-radius: 5px;
+  border: 1px solid #030f25;
+  outline: none;
+  background: rgba(231, 32, 32, 0.9);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+input[type="checkbox"] {
+  display: block;
+  border: 2px solid #182a3e;
+  border-radius: 2px;
+  margin: 1rem 0;
+}
+
+.form-text {
+  width: 100%;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.social-login input {
+  width: 90%;
+  padding: 1.1rem 3rem;
+  outline: none;
+  margin-left: 3rem;
+  /* background: #f5f5f5; */
+  mix-blend-mode: normal;
+  color: #fffbfb;
+  font-size: 1.2rem;
+  border: 1px solid #808080;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.social-login .google {
+  background-image: url("../assets/symbol (1).png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+}
+
+.social-login .fb {
+  background-image: url("../assets/symbol.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+}
+
+.already {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.footer-img img {
+  bottom: 18rem;
+  position: relative;
+  left: 0;
+}
+
+@media (max-width: 1150px) {
+  body {
+    overflow: unset;
+  }
+  .bars {
+    display: flex;
+  }
+
+  .bars::after {
+    content: "\f0c9";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    font-size: 2rem;
+    cursor: pointer;
+    color: #000;
+    transition: 0.5s ease-out;
+  }
+
+  .active::after {
+    content: "\f00d";
+  }
+
+  .nav-container ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 70%;
+    height: 55vh;
+    background: rgb(231, 32, 32);
+    position: fixed;
+    padding-left: 0.7rem;
+    top: 9vh;
+    right: 0;
+  }
+
+  .nav-container ul li a {
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .or,
+  .form-text,
+  .circle img,
+  .already {
+    display: none;
+  }
+
+  .create-account {
+    margin-top: 5rem;
+    display: block;
+    text-align: center;
+  }
+
+  .show {
+    display: block;
+  }
+
+  #mob {
+    display: none;
+  }
+
+  .login {
+    width: 90%;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  input[type="text"],
+  [type="password"],
+  [type="email"],
+  [type="number"],
+  [type="submit"] {
+    width: 100%;
+    margin-left: 0px;
+    margin: 0.8rem 0;
+  }
+  .footer-img img {
+    display: none;
+  }
+}
