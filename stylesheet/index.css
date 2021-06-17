@@ -68,7 +68,8 @@ nav {
 .circle img {
   right: -28rem;
   position: relative;
-  top: 29vh;
+  top: 32vh;
+  width: 290px;
 }
 
 .login {
