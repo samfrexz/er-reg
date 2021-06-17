@@ -147,13 +147,13 @@ input[type="checkbox"] {
 
 .social-login .google {
   background-image: url("../assets/symbol (1).png");
-  background-position: 10px 10px;
+  background-position: 10px 17px;
   background-repeat: no-repeat;
 }
 
 .social-login .fb {
   background-image: url("../assets/symbol.png");
-  background-position: 10px 10px;
+  background-position: 10px 17px;
   background-repeat: no-repeat;
 }
 
