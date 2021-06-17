@@ -20,7 +20,7 @@ nav {
 }
 
 .logo {
-  top: 2.5rem;
+  top: 2.2rem;
   position: relative;
 }
 
@@ -28,7 +28,7 @@ nav {
   display: flex;
   width: 86%;
   margin: 0 auto;
-  height: 9vh;
+  height: 10vh;
   justify-content: space-between;
   align-items: center;
 }
@@ -68,7 +68,7 @@ nav {
 .circle img {
   right: -28rem;
   position: relative;
-  top: 25vh;
+  top: 29vh;
 }
 
 .login {
