@@ -66,7 +66,7 @@ nav {
 }
 
 .circle img {
-  right: -33rem;
+  right: -28rem;
   position: relative;
   top: 25vh;
 }
@@ -87,8 +87,7 @@ nav {
 input[type="text"],
 [type="password"],
 [type="email"],
-[type="number"],
-[type="submit"] {
+[type="tel"] {
   width: 90%;
   margin: 0.8rem auto;
   padding: 1rem 0.7rem;
@@ -98,7 +97,7 @@ input[type="text"],
 }
 
 .or {
-  margin-top: 4rem;
+  margin-top: 6.5rem;
 }
 
 .or img {
@@ -254,7 +253,7 @@ input[type="checkbox"] {
   input[type="text"],
   [type="password"],
   [type="email"],
-  [type="number"],
+  [type="tel"],
   [type="submit"] {
     width: 100%;
     margin-left: 0px;
